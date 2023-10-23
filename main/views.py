@@ -158,4 +158,7 @@ def search(request):
 
     return render(request, 'main/search.html', {'product': service})
 
+def about(request):
+    return render(request, 'main/about.html')
+
 
