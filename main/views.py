@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.db.models import Q
+from django.shortcuts import render, redirect
+from django.views.generic import ListView
+
 from . import models
 
 
@@ -139,3 +142,20 @@ def home(request):
 
 def home_page(request):
     return render(request, 'main/home.html')
+
+class Search(ListView):
+    template_name = 'main/search.html'
+    context_object_name = 'product'
+    def get_queryset(self):
+        return models.Animal.objects.filter(name__icontains=self.request.GET.get('q'))
+
+def search(request):
+    search_input = request.GET.get('q')
+
+    service = models.Service.objects.filter(Q(name__iregex=r'\b{}\b'.format(search_input)) |
+                                            Q(category__iregex=r'\b{}\b'.format(search_input)) |
+                                            Q(animal_species__iregex=r'\b{}\b'.format(search_input)))
+
+    return render(request, 'main/search.html', {'product': service})
+
+
