@@ -161,4 +161,35 @@ def search(request):
 def about(request):
     return render(request, 'main/about.html')
 
+def grumming(request):
+    grumming = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Груминг')))
+    return render(request, 'main/grumming.html', {'grumming':grumming})
 
+
+def vaccine(request):
+    vaccine = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Вакцинация')))
+    return render(request, 'main/vaccine.html', {'vaccine':vaccine})
+
+def hirurg(request):
+    hirurg = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Хирургия')))
+    return render(request, 'main/hirurg.html', {'hirurg':hirurg})
+
+
+def labis(request):
+    labis = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Лабораторные исследования')))
+    return render(request, 'main/labis.html', {'labis':labis})
+
+
+def chip(request):
+    chip = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Чипирование')))
+    return render(request, 'main/chip.html', {'chip':chip})
+
+
+def terap(request):
+    terap = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Терапия')))
+    return render(request, 'main/terap.html', {'terap':terap})
+
+
+def oftal(request):
+    oftal = models.Service.objects.filter(Q(category__iregex=r'\b{}\b'.format('Офтальмология')))
+    return render(request, 'main/oftal.html', {'oftal':oftal})

@@ -153,7 +153,7 @@
 </style>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 320px; border-radius: 12px; max-height: 370px; overflow-y: auto;">
-	<li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	<li><a   style="text-decoration: none;" href="{% url 'grumming' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: de8014e1d5;
 		}
 		.dropdown-item:active{
@@ -167,8 +167,8 @@
 
 		}
 </style><img src="{% static 'main/img/grumming.svg' %}" style="width: 37px;">
-		<span style="padding: 3px;">Грумминг</span></button></a></li>
-    <li><a   style="text-decoration: none;" href=""><style>.dropdown-item:hover{
+		<span style="padding: 3px;">Груминг</span></button></a></li>
+    <li><a   style="text-decoration: none;" href="{% url 'chip' %}"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -178,7 +178,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><button class="dropdown-item" type="button" style="height: 50px;"><img src="{% static 'main/img/chipirovanie.svg' %}" style="width: 37px;"><span style="padding: 3px;">Чипирование</span></button></a></li>
-    <li><a   style="text-decoration: none;" href=""><style>.dropdown-item:hover{
+    <li><a   style="text-decoration: none;" href="{% url 'vaccine' %}"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -188,7 +188,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><button class="dropdown-item" type="button" style="height: 50px;"><img src="{% static 'main/img/vakcinaciya.svg' %}" style="width: 37px;"><span style="padding: 3px;">Вакцинация</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'hirurg' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -198,7 +198,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><img src="{% static 'main/img/hirurgiya.svg' %}" style="width: 37px;"><span style="padding: 3px;">Хирургия</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'labis' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -208,7 +208,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><img src="{% static 'main/img/laborator.svg' %}" style="width: 37px;"><span style="padding: 3px;">Лабараторные исследования</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'oftal' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -218,7 +218,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><img src="{% static 'main/img/oftal.svg' %}" style="width: 37px;"><span style="padding: 3px;">Офтальмология</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'stomat' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -228,7 +228,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><img src="{% static 'main/img/stomatol.svg' %}" style="width: 37px;"><span style="padding: 3px;">Стоматология</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'terap' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -238,7 +238,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><img src="{% static 'main/img/terapiya.svg' %}" style="width: 37px;"><span style="padding: 3px;">Терапия</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'doc' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -248,7 +248,7 @@
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 </style><img src="{% static 'main/img/document.svg' %}" style="width: 37px;"><span style="padding: 3px;">Сопроводительные документы</span></button></a></li>
-	  <li><a   style="text-decoration: none;" href=""><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
+	  <li><a   style="text-decoration: none;" href="{% url 'zoog' %}"><button class="dropdown-item" type="button" style="height: 50px;"><style>.dropdown-item:hover{
 			background-color: rgba(30, 144, 255, 0.6);
 		}
 		.dropdown-item:active{
@@ -304,6 +304,14 @@
 			class="main main--hidden flex-column">
 					{% block content %}
 					{% endblock %}
+
+			<div class="content ">
+					<div class="container ">
+						<p style="color:black;">
+								Цены могут варьироваться в зависимости от вида животного, его веса, состояния здоровья и необходимости дополнительных процедур. Рекомендуется обратиться к администратору клиники для получения точной информации о стоимости услуг.
+							</p> </div> </div>
+
+
 			</main>
 			<footer class="footer">
 				<div class="container-spread">
@@ -318,7 +326,7 @@
 				Каталог товаров			</a>
 		</div><div class="menu-footer__item">
 			<a class="menu-footer__link" href="/about">
-				О компании			</a>
+				О нас			</a>
 		</div><div class="menu-footer__item">{% if request.user.is_authenticated %}
 			<a class="menu-footer__link" href="/accounts/profile/">{% else %}<a href="" class="menu-footer__link">{% endif %}
 				Личный кабинет			</a>

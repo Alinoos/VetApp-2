@@ -2,6 +2,8 @@
 {% load static %}
 
 {% block content %}
+<div class="content ">
+					<div class="container ">
 
 <style>
         /* Стили для оформления раздела "О нас" */
@@ -61,20 +63,6 @@
     }, 10000);
 </script>
 
-{% if flag %}
-
-    <div class="popup">
-        <div style="position: fixed; bottom: 20px; right: 20px; background: white; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); z-index: 9999; text-align: center;">
-            <img src="{% static 'cart/green_flag.png' %}" alt="Success Image" style="width: 20px; height: 20px; margin-right: 10px;">
-            <p style="display: inline-block; vertical-align: middle; margin-top: auto; margin-bottom: auto;">Заказ успешно оформлен!</p>
-            <button type="button" class="close" aria-label="Close" onclick="closePopup()" style="background: white; border-color: white; border-width: 0px;">
-                <span aria-hidden="true"><a class="btn-close"></a></span>
-            </button>
-        </div>
-    </div>
-
-{% endif %}
-
 
 
 <style>
@@ -84,49 +72,46 @@
     }
 </style>
       <div class="catalog-sections matrix matrix--big row">
-      <div class="card" style="width: 23rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
+      <div class="card" style="width: 18rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
   <a class="menu" >  <img src="{% static 'main/vetvrachi/vet5.webp' %}" class="card-img-top" alt="bread" style="border-radius: 12px;">
 <div class="card-body" style="">
-		<h2 style="">Петров Пётр Петрович</h2>
+		<h2 style="">Павлова Арина Николаевна</h2>
+        <p>Заведующая хирургическим отделением, невролог, нейрохирург </p>
   </div></a>
 
-      </div><div class="card" style="width: 23rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
+      </div><div class="card" style="width: 18rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
  <a class="menu">
     <img src="{% static 'main/vetvrachi/vet2.webp' %}" class="card-img-top" alt="cake" style="border-radius: 12px;">
     <div class="card-body" style="">
-        <h2 style="">Иванов Иван Иванович</h2>
-        <p>Заведующий хирургическим отделением, невролог, нейрохирург</p>
+        <h2 style="">Родионов Иван Ильич</h2>
+        <p>Врач-онколог</p>
     </div>
  </a></div>
 
-      <div class="card" style="width: 23rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
+      <div class="card" style="width: 18rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
  <a class="menu">
     <img src="{% static 'main/vetvrachi/vet3.webp' %}" class="card-img-top" alt="cake" style="border-radius: 12px;">
     <div class="card-body" style="">
-        <h2 style="">Иванов Иван Иванович</h2>
-        <p>Заведующий хирургическим отделением, невролог, нейрохирург</p>
+        <h2 style="">Самойлова Юлия Леонидовна</h2>
+        <p>Врач-терапевт, стоматолог-терапевт</p>
     </div>
  </a></div>
-<div class="card" style="width: 23rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
+<div class="card" style="width: 18rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
  <a class="menu">
     <img src="{% static 'main/vetvrachi/vet1.webp' %}" class="card-img-top" alt="cake" style="border-radius: 12px;">
     <div class="card-body" style="">
-        <h2 style="">Иванов Иван Иванович</h2>
-        <p>Заведующий хирургическим отделением, невролог, нейрохирург</p>
+        <h2 style="">Невронова Оксана Витальевна</h2>
+        <p>Ветеринарный врач-офтальмолог</p>
     </div>
  </a></div>
-          <div class="card" style="width: 23rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
+          <div class="card" style="width: 18rem; border: none; border-radius: 20px; margin-left: auto; margin-right: auto;">
  <a class="menu">
     <img src="{% static 'main/vetvrachi/vet4.webp' %}" class="card-img-top" alt="cake" style="border-radius: 12px;">
     <div class="card-body" style="">
-        <h2 style="">Иванов Иван Иванович</h2>
-        <p>Заведующий хирургическим отделением, невролог, нейрохирург</p>
+        <h2 style="">Филимонова Евгения Олеговна</h2>
+        <p>Руководитель лаборатории</p>
     </div>
  </a></div>
       </div>
-
-
-        <a href="контакты.html" class="cta-button">Свяжитесь с нами</a>
-
-
+                    </div></div>
 {% endblock %}
